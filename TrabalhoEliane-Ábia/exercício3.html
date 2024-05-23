@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <h1>Formulário</h1>
+    <script>
+        nome1= window.prompt("Qual seu nome?");
+        if (nome1!=null && nome1!="")
+        {
+            document.write("Olá, "+nome1+"!");
+        }
+        else
+        {
+            document.write("Olá, visitante!");
+        }
+    </script>
+</head>
+<body>
+    <form action="abiamaro65@gmail.com" metrod="POST" enctype ="text/plain"
+    name="cadastro">
+    <p>Por favor, preencha os campos abaixo e depois clique no botão Enviar. Caso
+        necessite apagar os dados, dê um clique no botão Limpar.<br> Muito Obrigado!<br><br><br></p>
+    
+        Nome Completo: <input type="text" name= "nome" size= "35"><br>
+    
+        Seu e-mail:   <input type="text" name= "nome" size= "35"><br><br>
+    
+        Sexo: <br>
+            <input type="radio" name="sexo" value="f"> Feminino <br>
+            <INPUT type="radio" name="sexo" value="m"> Masculino <br><br>
+    
+        Estado Civil: <br>
+            <input type="radio" name="civil" value="s"> Solteiro <br>
+            <input type="radio" name="civil" value="c"> Casado <br>
+            <input type="radio" name="civil" value="e"> Enrolado <br><br>
+    
+        Bens que possui: <br>
+            <input type="checkbox" name="bens" value="c"> Casa <br>
+            <input type="checkbox" name="bens" value="a"> Automóvel <br>
+            <input type="checkbox" name="bens" value="m"> Moto <br><br>
+    
+        Faixa de idade: <select name="faixaidade">
+            <option value="3a10"> 3 a 10 anos
+            <option value="11a25"> 11 a 25 anos
+            <option value="26a35"> 26 a 35 anos  
+            <option value="36a55"> 36 a 55 anos  
+            <option value="56a90"> 56 a 90 anos
+            </select><br><br>
+
+        Hobbie preferido: <select name="hobby">
+            <option value="livros"> Ler livros
+            <option value="musica"> Ouvir música
+            <option value="cinema"> Assistir filmes
+            <option value="esporte"> Praticar esportes
+            <option value="games"> Jogar games
+            </select><br><br>
+    
+        Observações Gerais: <br>
+        <textarea name="observacoes" rows="5" cols="60"></textarea><br>
+    
+        <input type="submit" value="Enviar Dados">
+        <input type="reset" value="Limpar dados">
+    
+    
+    
+    </form>
+    </body>
+    </html>
